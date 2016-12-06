@@ -1,0 +1,19 @@
+{
+  "name": "cube-react-source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fbjs": "^0.8.6",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
