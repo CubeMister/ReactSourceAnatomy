@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <pre>
+        ReactDOM.render: ReactMount.render
+
+        ReactMount
+        - render @param{ReactElement, DOMElement, ?function, ReactComponent}
+        - _renderSubtreeIntoContainer @param{parentComponent, nextElement, container, callback}
+        - ReactUpdateQueue.validateCallback
+        - ReactElement.isValidElement
+          - invariant
+          - _prodInvariant
+        - warning
+        - ReactElement
+        - ReactInstanceMap
+        
+
+    </pre>
+    <script type="text/javascript" src="./react1/dist/react.js"></script>
+    <script type="text/javascript" src="./react-dom1/dist/react-dom.js"></script>
+
+    <script type="text/javascript">
+        // var HelloWorld = React.createClass({
+        //     displayName: 'HelloWorld',
+        //     render: function () {
+        //         return React.createElement('h1', null, this.props.name);
+        //     }           
+        // });
+
+        ReactDOM.render(
+            React.createElement('h1', null, 'Mr.Cube'), 
+            document.getElementById('app'),
+            function () {
+                console.log('render success');
+            }
+        );
+
+        console.log(ReactDOM.unmountComponentAtNode);
+        console.log(ReactDOM.version);
+    </script>
+</body>
+</html>
